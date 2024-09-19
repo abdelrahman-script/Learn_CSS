@@ -1,0 +1,1088 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.L05-L06 {
+  background-color: red;
+  background-color: rgb(0, 255, 0, 0.5);
+  /* (red, green, blue, Alpha Channel) Alpha Channel ==> الشفافيه */
+  background-color: #FF00FF;
+  /* Color Hex Code (red, green, blue) */
+  background-image: url("../imgs/the-test-fun-for-friends-screenshot.avif");
+  background-repeat: repeat;
+  /* تكرار الصوره */
+  background-repeat: repeat-X;
+  /* تكرار الصوره افقيا */
+  background-repeat: repeat-y;
+  /* تكرار الصوره راسيا */
+  background-repeat: no-repeat;
+  /* عدم تكرار الصوره*/
+  background-attachment: fixed;
+  /* هتفضل ثابته و انا بعمل اسكرول في الصفحه */
+  background-attachment: scroll;
+  /* هتتحرك معايا و انا بعمل اسكرول في الصفحه */
+  background-position: left top;
+  background-position: left center;
+  background-position: left bottom;
+  background-position: right top;
+  background-position: right center;
+  background-position: right bottom;
+  background-position: 50% 50%;
+  background-position: 100px 100px;
+  /* left top */
+  background-size: auto;
+  /* الصوره بتظهر بحجمها الطبيعي */
+  background-size: cover;
+  /* بتملي المحتوي كله لكن ممكن جزء منها ميبنش*/
+  background-size: contain;
+  /* بتملي المحتوي كله و كلها بيتكون باينه*/
+  background-size: 100px 200px;
+  /* width height */
+  background-size: 100% 50%;
+}
+
+.L07 {
+  background-color: #DDD;
+  padding: 10px;
+  /* top right bottom left*/
+  /* 10px 10px 10px 10px */
+  padding: 10px 20px;
+  /* top right bottom left*/
+  /* 10px 20px 10px 20px */
+  padding: 10px 20px 15px;
+  /* top right bottom left*/
+  /* 10px 20px 15px 20px */
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  /* padding ==> مش بيقبل قيمه بالسالب */
+}
+
+.L08-l09 {
+  width: 70%;
+  background-color: #DDD;
+  padding: 20px;
+  margin: -20px;
+  margin: 20px;
+  margin-right: auto;
+  /* بياخد الجزء اللي علي اليمين كله */
+  margin-left: auto;
+  /* بياخد الجزء اللي علي الشمال كله */
+  margin: auto;
+  /* بيوسطن العنصر من جميع الجهات */
+  /* بيقبل قيمه بالسالب */
+  border-width: 10px;
+  border-color: red green blue yellow;
+  border-style: solid;
+  border: 10px solid red;
+}
+
+.L11 .block {
+  /* 
+    Block
+
+    - Tack Full Width If No Width
+    - Add Line Break 
+    - Respect Padding, Margin, Width, Height
+    */
+
+  background-color: #EEE;
+  padding: 10px;
+  margin: 40px;
+}
+
+.L11 .inline {
+  /*     
+    Inline
+    
+    - Do Not Respect Width, Height
+    - Respect Padding And Margin [ Just Left + Right ]
+    - Do Not Add Line Break
+    - Allow Element Before And After It
+    */
+
+  background-color: #EEE;
+  padding: 10px;
+  margin: 10px;
+}
+
+.L11 .inline-block {
+  /*     
+    Inline Block
+    
+    - Allow Element Before And After It
+    - Respect Padding, Margin, Width, Height
+    */
+
+  display: inline-block;
+  background-color: #EEE;
+  padding: 10px;
+  margin: 10px;
+}
+
+.L12 div {
+  background-color: red;
+  margin: 10px 0px;
+  /* display: none; بتخفي العنصر و بيشيل المكان بتاعه */
+  /* visibility: visible; visible ==> القيه الافتراضيه اللي بتخلي العنصر ظاهر */
+  /* visibility: hidden; hidden ==> بتخفي العنصر مع الاحتفاظ بمكانه */
+}
+
+.L15 div {
+  background-color: red;
+  padding: 10px;
+  /* display: inline-block; */
+  /* min-width: 180px; */
+  /* اصغر عرض  */
+  /* max-width: 400px; */
+  /* اكبر عرض */
+  /* height: auto; */
+  /* القيمه الافتراضيه اللي بتخلي الطول يتمدد */
+  /* min-height: 40px; */
+  /* اصغر طول */
+  /* max-height: 50px; */
+  /* اكبر طول */
+  width: fit-content;
+  /* بتخلي العنصر علي قد المحتوي بس */
+}
+
+.L16 {
+  width: 150px;
+  height: 150px;
+  background-color: #eee;
+  margin: 20px auto;
+  /* overflow: visible; visible ==> لوالكلام اكتر من المحتوي هيطلع بره الصفحه عادي */
+  /* overflow: hidden; hidden ==> الكلام الزياده عن المحتوي بيختفي */
+  /* overflow: scroll; scroll ==> لو المحتوي عدي القيمه اللي هو فيها هقدر اعمل اسكرول و لو المحتوي معداش هتفضل علمات الاسكرول ظاهر */
+  /* overflow: auto; auto ==> لو المحتوي عدي القيمه اللي هو فيها هقدر اعمل اسكرول و لو المحتوي معداش مش هتفضل علمات الاسكرول ظاهر  */
+  /* overflow-y: hidden; ==> بيخفي الجزي العمودي بس */
+  /* overflow-x: hidden; ==> بيخفي الجزي الراسي بس */
+  overflow: auto;
+}
+
+.L17 div {
+  background-color: #ddd;
+  /* color: rebeccapurple; ==> ده اللي بيتحكم في لون الخط */
+  /* text-shadow: H-Shadow V-Shadow Blur Color; */
+  /* text-shadow: 1px 1px 1px rgb(255, 134, 134); */
+  /* text-align: left; left ==> الوضع الافتراضي   */
+  /* text-align: center; center ==>  هيخلي الكلام في النص */
+  /* text-align: right; right ==> هيخلي الكلام علي اليمين */
+  /* direction: ltr; ltr ==> الوضع الافتراضي للصفحه م ن الشمال لليمين */
+  /* direction: rtl; rtl ==> بتخلي اتجاه الصفحه من اليمين للشمال علشان لو الموقع عربي */
+}
+
+.L17 div img {
+  /* vertical-align: bottom; bottom ==> القيمه الافتراضيه اللي بتخلي النص في الاسفل */
+  /* vertical-align: top; top ==> هيخلي النص فوق */
+  vertical-align: middle;
+  /* middle ==> هيخلي النص في المنتصف */
+}
+
+.L19 .p1 {
+  background-color: #f9f9f9;
+  /* text-decoration: line-through; هيعمل خط في نص الكلمه */
+  /* text-decoration: underline; هيعمل خط في تحت الكلمه */
+  /* text-decoration: overline; هيعمل خط في فوق الكلمه */
+  /* text-decoration: none; هيشيل الخط من تحت الكلمه علشان لو عندي لينك */
+  /* text-transform: capitalize; بيخلي اول حرف كابيتل */
+  /* text-transform: uppercase; بيخلي كل حرف كابيتل */
+  /* text-transform: lowercase; بيخلي كل حرف اسمول */
+  /* letter-spacing: 2.5px; المسافه اللي بين الحروف */
+  /* letter-spacing: -2.5px; المسافه اللي بين الحروف */
+  /* text-indent: 100px; المساحه الفاضيه اللي قبل الكلام */
+  /* word-spacing: 9px; المسافه اللي بين الكلمات */
+}
+
+.L19 .p2 {
+  background-color: #a7a7a7;
+  width: 300px;
+  /* line-height: 4; المسافه بين الاسطر */
+  /* line-height: 1.7; المسافه بين الاسطر */
+  /* line-height: 1.6; المسافه بين الاسطر */
+  /* white-space: nowrap; بتخلي الكلام بيكمل و ملهوش علاقه بالمساحه اللي هو فيها */
+  /* overflow: hidden; بتخفي المحتوي اللي خارج عن المساحه اللي انا محددها */
+  /* text-overflow: ellipsis; بيعرف المستخدم ان الكلام لسه مخلص * 
+}
+
+.L19 .p3 {
+    background-color: #a7a7a7;
+    width: 300px;
+    /* word-break: break-all; بيخلي الكلام يحترم المساحه اللي انا مدهاله */
+}
+
+.L22 {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  font-size: 20px;
+  border: 2px solid blue;
+}
+
+.L22 p {
+  border: 2px solid;
+  border-color: inherit;
+  /* padding: inherit; inherit ==> بستخدمها علشان لو عاوز اورث حاجه من الاب  */
+}
+
+.L24 {
+  /* Default Font Size For Web Page Is 16px */
+  /* font-size: 20px; وحده القياس الثابته */
+  /* font-size: small; الاسماء المعبره اللي ممكن استخدمها */
+  font-size: 20px;
+  /* font-style: italic; بيخلي الخط مايل */
+  /* font-variant: small-caps;  بيخلي الحروف كابيتال بس اصغر من حجم الخط العادي */
+  /* font-weight: bold; بيخلي الخط عريض */
+  /* font-weight: normal; بيخلي الخط في الوضع الطبيعي */
+  /* cursor: ; لو عاوز اتحكم في شكل الماوس */
+}
+
+.L24 span {
+  /* 1em = Font Size With Parent */
+  /* font-size: 2em; 2em = 20px + 20px */
+  /* rem = Font Size With Root Element (HTML) */
+  /* font-size: 2em; 2em = 16px + 16px */
+  /* font-size: 50%; 50% = بيحدد المساحه اللي هياخدها من الاب */
+  font-size: 5vw;
+  /* vw (View Port Width) ==> حجم الكلام بيتغير مع تصغير اوتكبير الشاشه نش بيفضل ثابت */
+}
+
+.L27 {
+  margin: 0;
+}
+
+.L27 .parent {
+  background-color: red;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  /* overflow: hidden; بيعالج ان العناصر بيتكون عايمه في الصفحه بس مش الحل الامثل علشان لو عندي قايمه بتنزل هتخرج بره */
+}
+
+.L27 .parent div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #eee;
+  float: left;
+  /* هتخلي العناصر يتوزعوا بالعرض جنب بعض */
+  width: calc(95%/4);
+  margin-left: 1%;
+}
+
+.clear {
+  clear: both;
+  /* بيحل المشاكل بتاعت الفلوت */
+}
+
+.L29 .one {
+  background-color: rgb(255 0 0 / 0.3);
+  /* شفافيه الون بتاع الباكجروند */
+  margin-bottom: 5px;
+}
+
+.L29 .two {
+  background-color: red;
+  /* شفافيه المحتوي كله */
+  opacity: 0.3;
+}
+
+.L30 {
+  color: white;
+  padding: 10px;
+}
+
+.L30 .one {
+  width: 100px;
+  background-color: red;
+  padding-left: 10px;
+  /* position: static; بيخلي العنصر ثابت في مكانه مش بيتحرك */
+  /* position: relative; العنصر بيتحرك بنائا علي نفسه */
+  position: absolute;
+  /* العنصر بيتحرك بنائا علي الاب */
+  /* علشان اخلي العنصر يتحرك جوه الاب لازم الاب يكون ريليتيف و الابن يكون ابسيليوت */
+  bottom: 30px;
+  left: 30px;
+}
+
+.L30 .two {
+  width: 100px;
+  background-color: green;
+  padding-left: 10px;
+  /* position: fixed; */
+  /* بيفضل ثابت علي الصفحه و انا بعمل اسكرول */
+  top: 10px;
+}
+
+.L30 .parent {
+  width: 500px;
+  height: 300px;
+  background-color: blue;
+  position: relative;
+}
+
+.L30 .sticky {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  /* position: sticky; */
+  /* بيفضل موجود في المكان بتاعه لحد معمل اسكرول بيفضل ثابت */
+  top: 0;
+}
+
+.L31 div {
+  padding: 10px;
+  width: 100px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.L31 .one {
+  background-color: red;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+  /* z-index ==> بتحدد مين هيظهر قبل مين بس لازم الاب يكون واحد بوسيشن و لو عاوز اخلي عنصر في الاخر بديله قيمه بالسالب*/
+}
+
+.L31 .two {
+  background-color: green;
+  top: -35px;
+  left: 15px;
+  z-index: 2;
+}
+
+.L31 .three {
+  background-color: blue;
+  top: -90px;
+  left: 10px;
+  z-index: 1;
+}
+
+.L32 ul {
+
+  /* list-style-type: ; list-style-type ==> بقدر من خلالها اتحكم في نوع الشكل اللي بيكون موجود قبل العناصر */
+  /* list-style-position: ; list-style-position ==> مكان الشكل اللي قبل العناصر */
+  list-style-position: outside;
+  /* outside ==> خارج العنصر */
+  list-style-position: inside;
+  /* inside ==> داخل العنصر */
+  /* list-style-image: url(/imgs/the-test-fun-for-friends-screenshot.avif); لو عاوز اضيف صوره قبل العنصر*/
+  /* list-style: armenian inside url("/imgs/the-test-fun-for-friends-screenshot.avif"); */
+  padding-left: 0;
+  /* هيخليهم كلهم تحت بعض */
+  margin: 0;
+}
+
+.L32 li {
+  background-color: #EEE;
+  margin-bottom: 20px;
+}
+
+.L33 table {
+  width: calc(100% - 60px);
+  margin: 30px;
+  border-spacing: 0px;
+  /* المسافات اللي بين الخلايه */
+}
+
+.L33 table td {
+  padding: 15px;
+  background-color: #EEE;
+  border: 1px solid #c0dcc2;
+}
+
+.L33 table thead td {
+  background-color: #d60e61;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  border-color: #dc4f8a;
+}
+
+.L34 .one {
+  background-color: red;
+  color: #FFFFFF;
+}
+
+.L34 .two {
+  background-color: #EEE;
+  width: 100px;
+  height: 100px;
+}
+
+.L34 a {
+  color: green;
+  text-decoration: none;
+}
+
+.L34 a:hover {
+  color: red;
+}
+
+.L34 .ch:checked+label {
+  color: #d60e61;
+}
+
+.L34 a:visited {
+  color: blue;
+  /* بيحول النكات اللي انا زرتها بالون الازرق */
+}
+
+.L34 div:empty {
+  border: 10px solid red;
+  /* اي عنصر فاضي مفيش حاجه جواه*/
+}
+
+.L34 .in {
+  border: 1px solid black;
+}
+
+.L34 .in:focus {
+  /* لما اعمل فوكس  */
+  border-color: rgb(0, 143, 215);
+  outline: none;
+}
+
+.L35 .one span {
+  display: inline-block;
+  background-color: #d60e61;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.L35 .two::first-letter {
+  /* اول حرف */
+  display: inline-block;
+  background-color: #d60e61;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.L35 .three::first-line {
+  /* اول سطر */
+  display: inline-block;
+  background-color: #d60e61;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.L35 .four::selection {
+  /* لما اعمل سيليكت علي عنصر */
+  background-color: black;
+  color: yellow;
+}
+
+/* p1 */
+
+.L36-p1 .parent {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.L36-p1 .one {
+  background-color: #eee;
+  padding: 10px;
+  width: 600px;
+  float: left;
+  position: relative;
+}
+
+.L36-p1 .user {
+  background-color: #eee;
+  width: 50px;
+  margin-right: 20px;
+  padding: 10px;
+  height: 55.5px;
+  float: left;
+  font-size: 50px;
+  text-align: center;
+}
+
+.L36-p1 .one .pipeline {
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: #00bcd4;
+}
+
+/* p2 */
+.L36-p2 .parent {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.L36-p2 .one {
+  background-color: #eee;
+  padding: 10px;
+  width: 600px;
+  float: left;
+  position: relative;
+}
+
+.L36-p2 .user {
+  background-color: #eee;
+  width: 50px;
+  margin-right: 20px;
+  padding: 10px;
+  height: 55.5px;
+  float: left;
+  font-size: 50px;
+  text-align: center;
+}
+
+.L36-p2 .one::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: #00bcd4;
+}
+
+.L36-p2 .one::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #00bcd4 transparent transparent;
+}
+
+/* L37 */
+.L37 .parent {
+  margin-bottom: 20px;
+  overflow: hidden;
+  counter-increment: members-counter;
+}
+
+.L37 .one {
+  background-color: #eee;
+  padding: 10px;
+  width: 600px;
+  float: left;
+  position: relative;
+}
+
+.L37 .user {
+  background-color: #eee;
+  width: 50px;
+  margin-right: 20px;
+  padding: 10px;
+  height: 55.5px;
+  float: left;
+  font-size: 50px;
+  text-align: center;
+}
+
+.L37 .one::before {
+  content: attr(data-text);
+  /* عرض محتوي اي خصيه موجوده في الhtml */
+  display: none;
+}
+
+.L37 .one:hover::before {
+  display: block;
+}
+
+.L37 .one::after {
+  content: counter(members-counter);
+  position: absolute;
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  top: 50%;
+  margin-top: -10px;
+  text-align: center;
+}
+
+/*
+
+Vendors Prefixed
+
+  Chrome
+  Safari
+  Firefox
+  IE, Edge
+  Opera
+
+  [1] New CSS Feature Appeared
+  [2] Browsers Tests The Feature In Version X
+  [3] Browsers Add Prefix To Give Developers The Ability To Use It
+  [4] The Feature Is Fully Supported In Version Y, No Need For Prefix
+
+  -webkit- => Chrome, Safari, New Opera Version 
+  -moz- => Firefox
+  -o- => IE, Edge 
+  -ms- => Old Version Of Opera
+
+*/
+
+.L38 .class {
+  /* 
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+*/
+  border-radius: 10px;
+}
+
+/*
+  [1] Most Of Users Is Using Modern Browsers
+  [2] Vs Code Addon To Add The Prefix
+  [3] Task Runner
+*/
+
+.L39 div {
+  width: 100px;
+  height: 100px;
+  background-color: #d60e61;
+  margin: 20px auto;
+  border-radius: 50%;
+  /* 
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  */
+  /* لو الطول و العرض قد بعض هيعمل دايره */
+
+  border-top-left-radius: 20px 20px;
+  /* top && left */
+}
+
+.L40 div {
+  /*
+  H-Shadow | V-Shadow | Blur | Spread | Color | Inset 
+  */
+  padding: 20px;
+  background-color: #eee;
+  margin: 20px auto;
+  width: 300px;
+  box-shadow: 7px
+    /* الراسي */
+    7px
+    /* الافقي */
+    7px
+    /* الضباب */
+    0px
+    /* الانتشار */
+    #d60e61
+    /* اللون */
+  ;
+  box-shadow: 7px 7px 7px 0px #d60e61, -7px -7px 7px 0px #dc4f8a;
+  /* لو عاوز استخدم اكتر من شادو */
+}
+
+.L41 .parent {
+  width: 600px;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ddd;
+}
+
+.L41 .one {
+  background-color: #eee;
+  width: 300px;
+  float: left;
+  border: 10px solid #d60e61;
+  padding: 10px;
+  box-sizing: border-box;
+  /* box-sizing: content-box; ==> لو العنصر ليه عرض معين و ضفتله بادنج او بوردر الاتنين مش هيتحسبوا تبع العرض و العنضر عرضه هيذيد */
+  /* box-sizing: border-box; ==> لو العنصر ليه عرض معين و ضفتله بادنج او بوردر الاتنين هيتحسبوا تبع العرض و العنضر عرضه مش هيذيد */
+}
+
+/* *{box-sizing: border-box;} ==> الافضل اضفها لكل العناصر */
+
+.L42 .one {
+  background-color: #eee;
+  width: 200px;
+  height: 100px;
+  transition-duration: 1s;
+  /* 500ms */
+  /* transition-duration ==> مده الانتقال هتكون قد ايه */
+  transition-delay: 0.2s;
+  /* transition-delay ==> المده اللي بعدها التاثير هيحصل */
+  /* transition-property: all; كل الخواص اللي هتتغير */
+  transition-property: margin-left, width;
+  /* بختار الخواص اللي عاوز التاثير يحصل عليها */
+  /* transition-timing-function: ease; ==> بطيئ سريع بطيئ */
+  /* transition-timing-function: linear; ==> مش بيغير السرعه */
+  /* transition-timing-function: ease-in; ==> بيبدا بطئ */
+  /* transition-timing-function: ease-out; ==> بينتهي بطئ */
+  /* transition-timing-function: ease-in-out; ==> بيبدا بطئ و بينتهي بطئ بس ده مش سريع في النص*/
+  /* transition: width 3s, margin-top 2s; */
+  /* transition: all 0.5s 2s linear; transition-property transition-duration transition-delay transition-timing-function */
+}
+
+.L42 .one:hover {
+  margin-left: 1px;
+  margin-top: 1px;
+  width: 280px;
+}
+
+.L43 .one {
+  background-color: #d60e61 !important;
+  /* !important ==> بيخلي الخاصيه ديه هي اللي ليها الاولويه */
+}
+
+/*
+  The Margin Collapse
+  [1] Only Vertical Margin Collapse
+  [2] Bigger Margin Wins
+  [3] Mergin Collapsing With Elements Without Anything Between
+  [4] Nesting Does Not Prevent Collapsing
+*/
+
+.L44 .parent {
+  overflow: hidden;
+  margin: auto;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.L44 .parent .one,
+.L44 .parent .two {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.L44 .one {
+  background-color: #ddd;
+}
+
+.L44 .up {
+  background-color: red;
+  color: white;
+  height: 80px;
+  margin-bottom: 40px;
+}
+
+.L44 .down {
+  background-color: green;
+  color: white;
+  height: 80px;
+  margin-top: 20px;
+}
+
+/*
+  CSS Variable
+  - Globle Variable
+  - Local Variable
+  var(Variable Name, Fallback Value)
+*/
+:root {
+  --mainColor: #d60e61;
+  --mainPadding: 10px;
+}
+
+.L45 .main {
+  background-color: var(--mainColor, black);
+  color: white;
+  padding: calc(20px + var(--mainPadding));
+}
+
+.L45 h2 {
+  color: var(--mainColor);
+  background-color: #eee;
+  padding: var(--mainPadding);
+}
+
+.L45 p {
+  color: var(--mainColor);
+  border: 2px solid var(--mainColor);
+  padding: var(--mainPadding);
+}
+
+.L45 a:hover {
+  color: var(--mainColor);
+}
+
+/*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box => العنصر هياخد العرض كله
+  - display: inline-flex => To Start Flexible Box => العنصر هياخد عرض المحتوي بس
+  - flex-direction: [row] [column] [row-reverse] [column-reverse]
+  - flex-wrap: [nowrap] [wrap] [wrap-reverse]
+  - flex-flow: [flex-direction] + [flex-wrap]
+  - justify-content: [flex-start] [flex-end] [center] [space-between المسافه بين العناصر] [space-around المسافه حول العناصر] [space-evenly المسافه قبل و بعد العنصر] -> X -> بتحكم في المحتوي
+  - align-item: [stretch] [flex-start] [flex-end] [center] -> Y -> بتحكم في المحتوي
+  - align-content: [stretch] [flex-start] [flex-end] [center] [space-between] [space-around] [space-evenly] -> Y -> بيحرك المحتوي كله
+  For Child
+  - flex-grow: [0] => (Default Value) => (العناصر بتاخد مساحتها الطبيعيه) | [1 || Any Number] => (العناصر كلاها بتنموا قد بعض علشان تملي المحتوي اللي هي فيه بس بكون ديها لكل العناصر) | [2] => (لو باقي العناصر واخده واحد و العنصر ده واخد اتنين هو هياخد مساحه بتساوي مساحه عنصرين لو في مساحه متبقيه في الاب)
+  - flex-shrink: [1] => (Default Value) | [2] => (لما بديها لعنصر يبقي العنصر ده هو اول واحد هينكمش)
+  - order: [0] => (Default Value)
+  - flex-basis: [auto] => (Default Value) | width -> row | height -> column
+  - flex: [Flex Grow] [Flex Shrink] [Flex Basis] 0 1 Auto
+  - aline-salf: [auto] => (Default Value) | [flex-end] | [flex-start] | [center] | [stretch]
+  */
+
+.L46 .flex {
+
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.L46 .flex div {
+  background-color: #f00;
+  color: white;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+
+.L46 .float {
+  overflow: hidden;
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.L46 .float div {
+  background-color: #f00;
+  color: white;
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+
+.L47 {
+  background-color: #d60e61;
+  color: white;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.L54 {
+  display: flex;
+  justify-content: center;
+}
+
+.L54 img {
+  width: 200px;
+  height: 200px;
+  transition: 0.3s;
+  /* filter: grayscale(100%);  */
+  /* ابيض و اسود */
+  filter: blur(4px);
+  /* الضباب */
+}
+
+.L54 img:hover {
+  /* filter: grayscale(0); */
+  filter: blur(0);
+}
+
+/* 
+  Gradients
+  linear-gradient(Direction || Angle, Color Stop 1, Color Stop 1, ....)
+*/
+.L55 div {
+  /*
+  background-image: linear-gradient(to right, #d60e61, #00bcd4);
+  background-image: linear-gradient(90deg, #d60e61, #00bcd4);
+  background-image: linear-gradient(to left, #d60e61, #00bcd4);
+  background-image: linear-gradient(270, #d60e61, #00bcd4);
+  background-image: linear-gradient(to top, #d60e61, #00bcd4);
+  background-image: linear-gradient(0deg, #d60e61, #00bcd4);
+  background-image: linear-gradient(to bottom, #d60e61, #00bcd4);
+  background-image: linear-gradient(180deg, #000000 80%, #00bcd4);
+  */
+  width: 400px;
+  height: 200px;
+  background-color: #EEE;
+  margin: 20px auto;
+  position: relative;
+  padding: 10px;
+}
+
+.L55 div::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-image: linear-gradient(to right, #2980b9 20%, #27ae60 20%, #27ae60 40%, #d35400 40%, #d35400 60%, #8e44ad 60%, #8e44ad 80%, #c0392b 80%);
+}
+
+.L56 {
+  caret-color: #d60e61;
+  /* بيخلي العلامه اللي بتعرفني انا في اي جزء من الكمله تتلون بالون اللي انا عاوزه */
+}
+
+.L56 a {
+  /* pointer-events: none; --> بتلغي اي تاثير ممكن يحصل للعنصر*/
+}
+
+.L56 a:hover {
+  color: #2980b9;
+}
+
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns => [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat(), Mix]
+  - grid-template-rows => [Number Of Rows Height In] => [Px, %, Auto, Fraction, Repeat(), Mix]
+  - gap: [Row Gap] [Column Gap]
+  - justify-content: [flex-start] [flex-end] [center] [space-between] [space-around] [space-evenly]
+  - align-content: [flex-start] [flex-end] [center]
+  - grid-template-areas:
+  - grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); -> لو عاوز العناصر تكون رسبنسيف
+  child
+  - grid-culumn: [Start/End -> grid-culumn: 1/-1;] [Number Span -> grid-culumn: span 4; || Start / Span 3 -> grid-culumn: 2 / span 3;] [Start -> grid-column: 4]
+  - grid-row: [Start/End -> grid-row: 1/-1;] [Number Span -> grid-row: span 4; || Start / Span 3 -> grid-row: 2 / span 3;] [Start -> grid-row: 4]
+  - grid-area: [Grid Row Start] [Grid Column Start] [Grid Row End] [Grid Column End]
+  */
+
+
+.L57 .parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #dc4f8a;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
+  /*
+  row-gap: 10px;
+  column-gap: 10px;
+  */
+  gap: 10px 10px;
+  justify-content: center;
+  align-content: center;
+}
+
+.L57 .parent div {
+  /* height: calc((500px / 3) - 10px); */
+  background-color: #d60e61;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+.L60 ul {
+  list-style: none;
+}
+
+.L60 .page {
+  background-color: #dc4f8a;
+  color: white;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: 10vh 60vh 30vh;
+  grid-template-areas:
+    "logo logo . nav nav nav nav nav nav nav"
+    "cont cont cont cont cont cont cont . side side"
+    "foot foot foot foot foot foot foot foot foot foot"
+  ;
+}
+
+.L60 h2 {
+  grid-area: logo;
+  background-color: #d60e61;
+}
+
+.L60 ul li {
+  display: inline-block;
+}
+
+.L60 nav {
+  grid-area: nav;
+  background-color: #2980b9;
+}
+
+.L60 section {
+  grid-area: cont;
+  background-color: #27ae60;
+}
+
+.L60 aside {
+  grid-area: side;
+  background-color: #c0392b;
+}
+
+.L60 footer {
+  grid-area: foot;
+  background-color: darkred;
+}
+
+.L61 {
+  height: 100vh;
+}
+
+.L61 .parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #dc4f8a;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /*
+  row-gap: 10px;
+  column-gap: 10px;
+  */
+  gap: 10px 10px;
+}
+
+.L61 .parent div {
+  /* height: calc((500px / 3) - 10px); */
+  background-color: #d60e61;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.L61 .parent div:first-child {
+  grid-column: 1/-1;
+}
+
+.L61 .parent div:last-child {
+  grid-area: 5 / 4 / 7 / 5;
+}
+
+.L61 .parent .three {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
