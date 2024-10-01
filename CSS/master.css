@@ -1112,4 +1112,77 @@ Vendors Prefixed
   <-- بقدر احط فيها الخواص ديه كلها -->
   - matrix
   -- Syntax => matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )
-*/
+  --------------------------------------------
+  <-- المكان اللي العنصر هيتحرك من عنده -->
+  - transform-origin
+  - Syntax
+  - Default Value => 50% 50% 0
+  - 2D Transform => transform-origin(X, Y)
+  - 3D Transform => transform-origin(X, Y, Z)
+  - X-Asis
+  -- CSS Unit (px, em, rem)
+  -- %
+  -- Keyword
+  -- left = 0%
+  -- center = 50%
+  -- right = 100%
+  - Y-Asis
+  -- CSS Unit (px, em, rem)
+  -- %
+  -- Keyword
+  -- top = 0%
+  -- center = 50%
+  -- bottom = 100%
+  --------------------------------------------
+  <-------------- 3D Transform -------------->
+  - Rotate
+  -- transform: retate3d(X, Y, Z, degree);
+  -- transform: retate3d(1, 1, 1, 45deg);
+  -- transform: translate3d(X, Y, Z);
+  -- perspective: 300px; --> <-- المسافه اللي بديها للاب و بتعبر عن المسافه اللي بيني و بين العنصر -->
+  -- perspective-origin: left top; <-- بديها للاب و ده بتعبر عن المكان اللي هبص للعنصر منه -->
+  -- transform: translate3d(0, 0, 100px);
+  -- Backface-Visibility: hidden; --> بتخلي العنصر لما يلف ضهره ميبنش
+  -- Transform-Style: preserve-3d; --> بتخلي العنصر يحفظ مكانه في الصفحه
+  */
+/* <-- Flip Product --> */
+.L72 .container {
+  margin: 40px auto;
+  width: 200px;
+  perspective: 600px;
+}
+
+.L72 .box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  transform-origin: right center;
+}
+
+.L72 .box:hover {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.L72 .box .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  backface-visibility: hidden;
+}
+
+.L72 .box .front {
+  background-color: red;
+}
+
+.L72 .box .back {
+  background-color: green;
+  transform: rotateY(180deg);
+}
